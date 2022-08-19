@@ -1,5 +1,8 @@
 package org.genspark;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Phone {
 
     private String mob;
@@ -13,5 +16,9 @@ public class Phone {
 
     public Phone(String mob) {
         this.mob = mob;
+    }
+
+    public Phone() {
+        this.mob = "999-999-9999";
     }
 }

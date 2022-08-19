@@ -1,5 +1,8 @@
 package org.genspark;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Address {
 
     private String city;
@@ -12,6 +15,13 @@ public class Address {
         this.state = state;
         this.country = country;
         this.zipcode = zipcode;
+    }
+
+    public Address() {
+        this.city = "Seattle";
+        this.state = "Washington";
+        this.country = "United States";
+        this.zipcode = "98101";
     }
 
     @Override
